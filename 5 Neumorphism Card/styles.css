@@ -1,0 +1,76 @@
+body {    
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #000000 0%, #282828 100%);
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(250, 244, 244);
+    padding: 10px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(90deg, rgb(212, 0, 255), blue) 1;
+    width: fit-content;
+}
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    background: #f7f7f7;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.2), -12px -12px 24px rgba(255, 255, 255, 1);
+    transition: all 0.3s ease;
+    animation: shadow-animation 1s infinite alternate;
+}
+
+@keyframes shadow-animation {
+    0% {
+        box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.2), -12px -12px 24px rgb(64, 95, 235);
+    }
+    100% {
+        box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.3), 16px 16px 32px rgb(224, 91, 247);
+    }
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    color: #5e60ce;
+}
+
+p {
+    color: #333;
+}
+
+.btn {
+    background: #f7f7f7;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -4px -4px 10px rgba(255, 255, 255, 1);
+    color: #5e60ce;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #5e60ce;
+    color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 1);
+}
